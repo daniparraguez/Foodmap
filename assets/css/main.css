@@ -1,0 +1,37 @@
+body{
+	background-color: #2B2B2B;
+
+	padding: 0;
+	color:#D0823C;
+}
+#splash{
+	color:#D0823C;
+	text-align: center;
+	margin-top: 45vh;
+	margin-bottom: 55vh;
+
+}
+a.navbar-header{
+	padding: 0;
+}
+a.navbar-brand{
+	font-size: 2em;
+	color:#D0823C;
+}
+nav.navbar-default{
+	color:#D0823C;
+}
+.food{
+	color:#D0823C;
+}
+.thumbnail{
+	height: auto;
+	padding: 0;
+}
+.dropdown{
+	margin-bottom: 2em;
+}
+img,iframe,.thumbnail,.caption{
+width: 100%;
+object-fit: cover;
+}

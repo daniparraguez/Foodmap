@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>FoodMap</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<!--splash view-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-xs-12"><h1 id="splash">FoodMap</h1></div>
+	</div>
+</div>
+
+<!--Main page-->
+
+<div id="main">
+<!--navbar-->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="col-sm-4 col-xs-4">
+							<img class="img-responsive" alt="Brand" src="assets/img/restaurante-de-la-cuchilleria-simbolo-circular-de-una-cuchara-y-un-tenedor-en-un-circulo_318-61086.png">
+						</div>
+						<div class="col-sm-8 col-xs-8">
+							<a class="navbar-brand" href="#">FoodMap</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+<!--mapa-->
+						<div class="col-sm-12 col-xs-12">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.369386953474!2d-70.64215187159574!3d-33.438375004565366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes+o+cafeter%C3%ADas!5e0!3m2!1ses!2scl!4v1513124447787" width="290" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!--comienzo del filtro-->
+							<h2 class="food text-center">Comida cerca de tí</h2>
+<!--dropdown menu filtro-->
+<div class="dropdown text-center">
+	<button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		Elije tu tipo de comida
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenu1">
+		<li><a href="#thai" id="thai">Comida Thai</a></li>
+		<li><a href="#hindu" id="hindu" >Comida Hindú</a></li>
+		<li><a href="#chilena" id="chilena" >Comida Chilena</a></li>
+		<li class="disabled"><a href="#">Pronto...</a></li>
+	</ul>
+</div>
+
+<!-- Thai modal -->
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<h4 class="text-center">Restaurante Pad Thai</h4>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3959.369386953474!2d-70.64215187159574!3d-33.438375004565366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes+o+cafeter%C3%ADas!5e0!3m2!1ses!2scl!4v1513124447787" width="290" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h5>Dirección: Av. Manuel Montt 231, Providencia, Región Metropolitana</h5>
+			<h6>Horario: Hoy abierto · 13–0</h6>
+			<h6>Teléfono: (2) 2264 1957</h6>
+		</div>
+	</div>
+</div>
+<!--Galería Thai-->
+<div class="container-fluid thai" ">
+	<div class="row gallery">
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+				<img src="assets/img/Thai/padthai.jpeg" alt="padthai">
+			<div class="row caption">
+				<div class="col-sm-6 col-xs-6">
+					<h5>Pad Thai</h5>
+				</div>
+				<div class="col-sm-5 col-xs-">
+					<button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-sm">Ver más...</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+			<img src="assets/img/Thai/thai3.jpg" alt="">
+			<div class="row caption">
+				<div class="col-sm-6 col-xs-6">
+					<h5>Pad Thai</h5>
+				</div>
+				<div class="col-sm-5 col-xs-5">
+					<button type="button" class="btn btn-warning">Ver más...</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="row gallery">
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="row caption">
+				<div class="col-sm-6 col-xs-6">
+					<h5>Pad Thai</h5>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<button type="button" class="btn btn-warning">Ver más...</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="row caption">
+				<div class="col-sm-6 col-xs-6">
+					<h5>Pad Thai</h5>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<button type="button" class="btn btn-warning">Ver más...</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="row caption">
+				<div class="col-sm-4 col-xs-6">
+					<h5>Pad Thai</h5>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<button type="button" class="btn btn-warning">Ver más...</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Galería Hindú-->
+<div class="container-fluid hindu">
+	<div class="row gallery">
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h5>Thumbnail label</h5>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h5>Thumbnail label</h5>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="row gallery">
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Galería Chilena-->
+<div class="container-fluid chilena">
+	<div class="row gallery">
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h5>Thumbnail label</h5>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-6">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h5>Thumbnail label</h5>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="row gallery">
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="thumbnail">
+			<img src="..." alt="...">
+			<div class="caption">
+				<h6>Thumbnail label</h6>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
